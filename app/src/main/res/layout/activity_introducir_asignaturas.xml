@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntroducirAsignaturas">
+
+    <TextView
+        android:id="@+id/txt_introducir_asignatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/textoIntroducirAsignatura"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/edittxt_nombre_asginatura"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/edittxt_nombre_asginatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduce el nombre de la asignatura"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_introducir_asignatura"
+        app:layout_constraintBottom_toTopOf="@id/edittxt_calificacion_asginatura"></EditText>
+
+    <EditText
+        android:id="@+id/edittxt_calificacion_asginatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduce la calificacion de la asignatura"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edittxt_nombre_asginatura"
+        app:layout_constraintBottom_toTopOf="@id/btn_crear_asginatura"></EditText>
+
+    <Button
+        android:id="@+id/btn_crear_asginatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/botonAceptarAsginatura"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edittxt_calificacion_asginatura"
+        app:layout_constraintBottom_toBottomOf="parent"></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

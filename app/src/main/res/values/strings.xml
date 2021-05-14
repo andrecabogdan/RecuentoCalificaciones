@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RecuentoCalificacionesApp</string>
+    <string name="tituloApp">Recuento de Calificaciones</string>
+    <string name="botonIntroducirAsignatura">Introducir asignatura</string>
+    <string name="botonVisualizarAsignaturas">Visualizar Asignaturas</string>
+    <string name="textoIntroducirAsignatura">Introducir una asginatura</string>
+    <string name="botonAceptarAsginatura">Aceptar</string>
+    <string name="textoVisualizarAsignaturas">Visualizar Asignaturas</string>
+</resources>
